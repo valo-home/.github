@@ -1,0 +1,29 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: System, About in Valo, or the image tag
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Steps, what you expected and what you saw
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: docker compose logs <service>, remove passwords and tokens
+      render: text
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware
+      description: Computer, Zigbee coordinator, devices or cameras involved

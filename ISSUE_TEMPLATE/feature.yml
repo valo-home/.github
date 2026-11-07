@@ -1,0 +1,16 @@
+name: Feature request
+description: An idea or a new device to support
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What do you need
+      description: The situation at home and what Valo should do
+    validations:
+      required: true
+  - type: textarea
+    id: devices
+    attributes:
+      label: Devices
+      description: Model names, Zigbee2MQTT definitions or links, if a device is involved
